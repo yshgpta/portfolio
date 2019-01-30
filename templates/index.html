@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mr. Gupta</title>
+	<meta name="description" content="Career Portfolio of Mr. Yash Gupta" />
+	<meta name="author" content="Yash Gupta" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- Home -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mycomponent.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<script src="{% static 'script/modernizr-2.6.2.min.js' %}"></script>
+	<script src="{% static 'script/bcscript.js' %}"></script>
+	<script src="{% static 'script/skill_bar.js' %}"></script>
+	<script src="{% static 'script/blog.js' %}"></script>
+	<script src="{% static 'script/form.js' %}"></script>
+
+	<!-- About Me -->
+
+</head>
+
+<body onload="load()">
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" onclick="load_tiles()" href="#page-aboutme">About Me</a></div>
+		<div class="pages-nav__item"><a class="link link--page" onclick="load_bar()" href="#page-myskills">Skills</a></div>
+		<div class="pages-nav__item"><a class="link link--page" onclick="load_tech_tiles()" href="#page-technologies">Technologies</a></div>
+		<div class="pages-nav__item"><a class="link link--page" onclick="load_education_poster()" href="#page-education">Education</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-projects">Projects</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" onclick="load_info_tiles()" href="#page-info">Personal Info</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" onclick="load_quote()" href="#page-blog">Blog &amp; News</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" onclick="load_form()" href="#page-contact">Get In Touch</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="https://yshgpta.blogspot.com/"><i class="fa fa-rss-square"></i><span class="text-hidden">Blog</span></a>
+			<a class="link link--social link--faded" href="https://www.linkedin.com/in/yash-gupta-7b56b6160/"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+			<a class="link link--social link--faded" href="https://www.facebook.com/yash.chemicallocha"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+			<a class="link link--social link--faded" href="https://www.instagram.com/ysh_gpta/"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<!-- page -->
+		<div class="page" id="page-home">
+			<!-- Blueprint header -->
+			<header class="home-header home-slider cf">
+				<div class="home-text">
+					<div class="home-text1">
+						<h1 class="home-header-present">Hi!</h1>
+						<h1 class="home-header-present">I'm Yash Gupta</h1>
+						<p class="home-header-desc">I'm a second year undergraduate student pursuing Bachelor of Technology Degree in Information Technology.</p>
+						<button class="header-btn" type="button" name="button"><a href="#">Download Resume <img class="icon-btn" src="{% static 'images/download.png' %}" alt="Download Icon" height="15px" width="auto"></a></button>
+					</div>
+					<div class="home-text2">
+						<h1 class="home-header-proff">I'm a</h1>
+						<h1 class="home-header-proff-title">Developer, Coder, Designer</h1>
+						<p class="home-header-proff-desc">Innovate, Code, Develop and Design</p>
+						<button class="header-btn" type="button" name="button"><a  href="https://github.com/yshgpta">View Github <img class="icon-btn"src="{% static 'images/github.png' %}" alt="Download Icon" height="15px" width="auto"></a></button>
+					</div>
+				</div>
+			</header>
+			<img class="poster" src="{% static 'images/1.png' %}" alt="img01" />
+		</div>
+
+		<!-- /page -->
+		<div class="page" id="page-aboutme">
+			<div class="aboutme-col1">
+				<header class="aboutme-header cf">
+					<h1 class="aboutme-header-title">About Myself</h1>
+					<p class="aboutme-header-desc">Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I a type of person, the more you know me, the more curious you get to know me better. At times I can be the most boring living creature on the planet. But thank GOD I can't stay that way too long :). I'm not a loner, but form time to time I need some time alone to re-contemplate the meaning of life. Sometimes I believe, I think more than I should, more thoughtful than I should be. I'm too economical in using any resourse(except bandwidth, I think). I prefer to wear unfasionable comfortable clothes over smart looking unwieldy ones. And the most important part I have the power to control my reactions when challenges knock my door.</p>
+				</header>
+			</div>
+			<div class="aboutme-col2">
+				<div class="tiles">
+					<div class="row">
+						<div class="tiles_info first_box">
+							<span class="icon1"><img src="{% static 'images/icon1.png' %}" alt="" height="50px" width="auto"> </span>
+							<p class="tiles_text">Innovative Ideas</p>
+						</div>
+						<div class="tiles_info second_box">
+							<span class="icon1"><img src="{% static 'images/icon2.png' %}" alt="" height="50px" width="auto"> </span>
+							<p class="tiles_text">Web Development</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="tiles_info third_box">
+							<span class="icon1"><img src="{% static 'images/icon3.png' %}" alt="" height="50px" width="auto"> </span>
+							<p class="tiles_text">Graphic Designing</p>
+						</div>
+						<div class="tiles_info fourth_box">
+							<span class="icon1"><img src="{% static 'images/icon4.png' %}" alt="" height="50px" width="auto"> </span>
+							<p class="tiles_text">App Development</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page" id="page-myskills">
+			<header class="myskills-header cf">
+				<h1 class="myskills-header-title">My Skills</h1>
+			</header>
+			<div class="skill">
+				<div class="skill_row">
+					<div class="skill_header">Technical Skills</div>
+					<div class="skill_item">
+						<div class="bar-title">Full Stack Development</div>
+						<div class="progress">
+							<div class="progress-bar bar1" role="progressbar" aria-valuenow="95" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct1"></span><span class="percent p1">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Android Development</div>
+						<div class="progress">
+							<div class="progress-bar bar2" role="progressbar" aria-valuenow="85" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct2"></span><span class="percent p2">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">After Effects</div>
+						<div class="progress">
+							<div class="progress-bar bar3" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct3"></span><span class="percent p3">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Illustrator</div>
+						<div class="progress">
+							<div class="progress-bar bar4" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct4"></span><span class="percent p4">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Java FX</div>
+						<div class="progress">
+							<div class="progress-bar bar5" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct5"></span><span class="percent p5">%</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="skill_row">
+					<div class="skill_header">Personal Skill</div>
+					<div class="skill_item">
+						<div class="bar-title">Creativity</div>
+						<div class="progress">
+							<div class="progress-bar bar6" role="progressbar" aria-valuenow="95" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct6"></span><span class="percent p6">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Leadership</div>
+						<div class="progress">
+							<div class="progress-bar bar7" role="progressbar" aria-valuenow="85" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct7"></span><span class="percent p7">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Adaptibility</div>
+						<div class="progress">
+							<div class="progress-bar bar8" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct8"></span><span class="percent p8">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Ability to work as a team</div>
+						<div class="progress">
+							<div class="progress-bar bar9" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct9"></span><span class="percent p9">%</span></div>
+						</div>
+					</div>
+					<div class="skill_item">
+						<div class="bar-title">Communication</div>
+						<div class="progress">
+							<div class="progress-bar bar10" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct10"></span><span class="percent p10">%</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page" id="page-technologies">
+			<header class="tech-header cf">
+				<h1 class="tech-header__title">Technologies and Language Expertize</h1>
+				<p class="tech-header__desc"></p>
+			</header>
+			<div class="tech-tools">
+				<div class="tech-tool-col">
+					<div class="tech-tool-item item1">
+						<span class="tech-tool-item1"><img src="{% static 'images/react.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">React JS</span>
+					</div>
+					<div class="tech-tool-item item2">
+						<span class="tech-tool-item1"><img src="{% static 'images/javascript.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">Javascript</span>
+					</div>
+					<div class="tech-tool-item item3">
+						<span class="tech-tool-item1"><img src="{% static 'images/htmlcss.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">HTML and CSS</span>
+					</div>
+					<div class="tech-tool-item item4">
+						<span class="tech-tool-item1"><img src="{% static 'images/mysql.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">My SQL</span>
+					</div>
+					<div class="tech-tool-item item5">
+						<span class="tech-tool-item1"><img src="{% static 'images/cpp.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">C++</span>
+					</div>
+				</div>
+				<div class="tech-tool-col">
+					<div class="tech-tool-item item1">
+						<span class="tech-tool-item1"><img src="{% static 'images/django.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">Django</span>
+					</div>
+					<div class="tech-tool-item item2">
+						<span class="tech-tool-item1"><img src="{% static 'images/nodejs.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">Node JS</span>
+					</div>
+					<div class="tech-tool-item item3">
+						<span class="tech-tool-item1"><img src="{% static 'images/kotlin.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">Kotlin</span>
+					</div>
+					<div class="tech-tool-item item4">
+						<span class="tech-tool-item1"><img src="{% static 'images/java.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">Java</span>
+					</div>
+					<div class="tech-tool-item item5">
+						<span class="tech-tool-item1"><img src="{% static 'images/python.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item2">Python</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page" id="page-education">
+			<header class="education-header cf">
+				<h1 class="education-header__title">Education</h1>
+				<p class="education-header__desc">My education life went through many ups and downs but what remained constant is my curiosity to know more.</p>
+				<div class="education-info">
+					<div class="education-title">2021 B-Tech in Information Technology</div>
+					<div class="education-desc">Indian Institute of Information Technology, Lucknow</div>
+					<div class="education-pointer">Currently in 4th Semester with aggregate pointer of 8.53 CGPA</div>
+				</div>
+				<div class="education-info">
+					<div class="education-title">2016 Intermediate</div>
+					<div class="education-desc">Montfort Inter College, Lucknow</div>
+					<div class="education-pointer">92.8% (U.P. Board)</div>
+				</div>
+				<div class="education-info">
+					<div class="education-title">2014 High School</div>
+					<div class="education-desc">Montfort Inter College, Lucknow</div>
+					<div class="education-pointer">89% (U.P. Board)</div>
+				</div>
+			</header>
+			<div class="education-poster">
+				<img class="" src="{% static 'images/montfort.jpg' %}" alt="">
+				<div>Montfort Inter College, Lucknow</div>
+			</div>
+		</div>
+		<div class="page" id="page-projects">
+			<header class="project-header cf">
+				<h1 class="project-header-title">Projects</h1>
+				<div class="project-section">
+					<div class="project-type">React</div>
+					<div class="project-list">
+						<div class="project">
+
+						</div>
+						<div class="project">
+
+						</div>
+						<div class="project">
+
+						</div>
+						<div class="project">
+
+						</div>
+					</div>
+				</div>
+				<div class="project-section">
+					<div class="project-type">Django</div>
+					<div class="project-list">
+						<div class="project">
+
+						</div>
+						<div class="project">
+
+						</div>
+						<div class="project">
+
+						</div>
+						<div class="project">
+
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="page" id="page-info">
+			<header class="info-header cf">
+				<h1 class="info-header__title">Personal Info</h1>
+				<p class="info-header__desc">This section helps you know me intimately.</p>
+				<div class="info-desc">
+					<span class="info-desc-title">Name:</span>
+					<span class="info-desc-value">Yash Gupta</span>
+				</div>
+				<div class="info-desc">
+					<span class="info-desc-title">Date of Birth:</span>
+					<span class="info-desc-value">25 March 1998</span>
+				</div>
+				<div class="info-desc">
+					<span class="info-desc-title">Mobile:</span>
+					<span class="info-desc-value">+91-8127078333</span>
+				</div>
+				<div class="info-desc">
+					<span class="info-desc-title">Address:</span>
+					<span class="info-desc-value">474A/53 Bramha Nagar Near Daliganj Railway Crossing, Lucknow</span>
+				</div>
+				<div class="info-desc">
+					<span class="info-desc-title">Marital Status:</span>
+					<span class="info-desc-value">Single</span>
+				</div>
+				<div class="info-desc">
+					<span class="info-desc-title">Interests:</span>
+					<span class="info-desc-value">Blogger, Poet, Orator</span>
+				</div>
+			</header>
+			<div class="info-poster">
+				<img src="{% static 'images/1.png'%}" alt="">
+			</div>
+		</div>
+		<div class="page" id="page-blog">
+			<header class="blog-header cf">
+				<h1 class="blog-header-title">Blog &amp; News</h1>
+				<p class="blog-header-desc">The crazyness don't ends here. Go and checkout my Blog - <a href="https://yshgpta.blogspot.com/">A Walk to Remember</a></p>
+				<p class="blog-info-title">Through this section you can know what I am currently working at.</p>
+				<p class="blog-info">
+					Currently I am in my fourth semester and will be sitting for internships next semester. Therefore currently I am busy improvising my coding skills.
+				</p>
+			</header>
+			<div class="blog-poster">
+			<p class="blog-poster-title">My Favourite Quote</p>
+			<div class="blog-data-container">
+				<div class="blog-data">
+					<div class="blog-quote">
+						<p class="blog-quote-data">"If you want to shine like a sun first burn like a sun."</p>
+					</div>
+					<div class="blog-quote-author-box">
+						<p class="blog-quote-author">Dr. A.P.J. Abdul Kalam</p>
+					</div>
+						<img class="blog-quote-poster" src="{% static 'images/abdulkalam.png' %}" alt="">
+				</div>
+				<div class="blog-data">
+					<div class="blog-quote">
+						<p class="blog-quote-data">"There is no passion to be found playing small – in settling for a life that is less than the one you are capable of living."</p>
+					</div>
+					<div class="blog-quote-author-box">
+						<p class="blog-quote-author">Nelson Mandela</p>
+					</div>
+						<img class="blog-quote-poster" src="{% static 'images/nelson.png' %}" alt="">
+			</div>
+			<div class="blog-data">
+				<div class="blog-quote">
+					<p class="blog-quote-data">"You can't cross the sea merely by standing and staring at the water."</p>
+				</div>
+				<div class="blog-quote-author-box">
+					<p class="blog-quote-author">Rabindranath Tagore</p>
+				</div>
+					<img class="blog-quote-poster" src="{% static 'images/tagore.png' %}" alt="">
+		</div>
+		<div class="blog-data">
+			<div class="blog-quote">
+				<p class="blog-quote-data">"Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid."</p>
+			</div>
+			<div class="blog-quote-author-box">
+				<p class="blog-quote-author">Albert Einstein</p>
+			</div>
+				<img class="blog-quote-poster" src="{% static 'images/albert.png' %}" alt="">
+	</div>
+	<div class="blog-data">
+		<div class="blog-quote">
+			<p class="blog-quote-data">"Many of life’s failures are people who did not realize how close they were to success when they gave up."</p>
+		</div>
+		<div class="blog-quote-author-box">
+			<p class="blog-quote-author">Thomas Alva Edison</p>
+		</div>
+			<img class="blog-quote-poster" src="{% static 'images/thomas.jpg' %}" alt="">
+</div>
+</div>
+</div>
+
+		</div>
+		<div class="page" id="page-contact">
+			<header class="contact-header cf">
+				<h1 class="contact-header-title">Have a question? I have answers!</h1>
+				<p class="info">Email me with any questions or enquiries or call +91-8127078333. I would be happy to answer your questions and set up a meeting with you.</p>
+				<div class="contact-box">
+					<img class="contact-icon" src="{% static 'images/gmail.png' %}" alt="" width="50px" height="50px">
+					<p class="contact-value">ysh.gpta8333@gmail.com</p>
+				</div>
+				<div class="contact-box">
+					<img class="contact-icon" src="{% static 'images/fb.png' %}" alt="" width="50px" height="50px">
+					<p class="contact-value">https://www.facebook.com/yash.chemicallocha</p>
+				</div>
+				<div class="contact-box">
+					<img class="contact-icon" src="{% static 'images/linkedin.png' %}" alt="" width="50px" height="50px">
+					<p class="contact-value">https://www.linkedin.com/in/yash-gupta-7b56b6160/</p>
+				</div>
+			</header>
+			<div class="form-container">
+				<div class="form-title">
+					<p>Fill out this form to get in touch!</p>
+				</div>
+				<div class="form-body">
+					<form action="">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="What your mother calls you?">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your e-mail ID">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Subject">
+						</div>
+						<div class="form-group">
+							<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Your words of Wisdom"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn-send-message" value="Send Message">
+						</div>
+					</form>
+				</div>
+		</div>
+		</div>
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+
+	<!-- Navigation -->
+	<script src="{% static 'script/classie.js' %}"></script>
+	<script src="{% static 'script/main.js' %}"></script>
+
+
+	<!-- About Me -->
+	<!-- <script src="{% static 'script/abcaboutme.js' %}"></script> -->
+</body>
+
+</html>

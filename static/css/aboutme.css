@@ -1,0 +1,34 @@
+.skill{
+  width: 550px;
+  margin: 100px;
+}
+
+.skill_header{
+  text-transform: uppercase;
+}
+
+.skill_item{
+  width: 100%;
+}
+
+.progress{
+  border: 0.4px solid #E6E6E6;
+  border-radius: 7px;
+  align-items: center;
+  width: 100%;
+  height: 14px;
+}
+
+.progress-bar{
+  background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  border-radius: 4.5px;
+  height: 9px;
+}
+h4{
+  text-align: right;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #777777;
+  margin-bottom: 15px;
+}
