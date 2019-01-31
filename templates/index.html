@@ -6,26 +6,22 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="{% static 'images/icon.png' %}" type="image/png">
 	<title>Mr. Gupta</title>
 	<meta name="description" content="Career Portfolio of Mr. Yash Gupta" />
 	<meta name="author" content="Yash Gupta" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-	<!-- Home -->
-	<link rel="stylesheet" type="text/css" href="{% static 'css/mycomponent.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/acomponent.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<script src="{% static 'script/modernizr-2.6.2.min.js' %}"></script>
-	<script src="{% static 'script/bcscript.js' %}"></script>
-	<script src="{% static 'script/skill_bar.js' %}"></script>
-	<script src="{% static 'script/blog.js' %}"></script>
-	<script src="{% static 'script/form.js' %}"></script>
 
-	<!-- About Me -->
+	<script src="{% static 'script/modernizr-2.6.2.min.js' %}"></script>
+	<script src="{% static 'script/script.js' %}"></script>
 
 </head>
 
-<body onload="load()">
+<body onload="load_initial()">
 	<!-- navigation -->
 	<nav class="pages-nav">
 		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
@@ -43,13 +39,13 @@
 			<a class="link link--social link--faded" href="https://www.facebook.com/yash.chemicallocha"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
 			<a class="link link--social link--faded" href="https://www.instagram.com/ysh_gpta/"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
 		</div>
+		<div class="copyright"><p><small>Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This Portfolio is made with <i class="fa fa-heart" aria-hidden="true"></i> by Yash Gupta</p></div>
 	</nav>
 	<!-- /navigation-->
 	<!-- pages stack -->
 	<div class="pages-stack">
 		<!-- page -->
 		<div class="page" id="page-home">
-			<!-- Blueprint header -->
 			<header class="home-header home-slider cf">
 				<div class="home-text">
 					<div class="home-text1">
@@ -177,8 +173,18 @@
 		</div>
 		<div class="page" id="page-technologies">
 			<header class="tech-header cf">
-				<h1 class="tech-header__title">Technologies and Language Expertize</h1>
-				<p class="tech-header__desc"></p>
+				<h1 class="tech-header-title">Technologies and Language Expertize</h1>
+				<div class="tech-languages">
+					<div class="language">
+						<span class="language-img"><img src="{% static 'images/chef.png' %}" alt="" height="60px" width="150px"></span><span class="language-text">Codechef</span>
+					</div>
+					<div class="language">
+						<span class="language-img"><img src="{% static 'images/codeforces.png' %}" alt="" height="80px" width="150px"></span><span class="language-text">Codeforces</span>
+					</div>
+					<div class="language">
+						<span class="language-img"><img src="{% static 'images/hackerearth.png' %}" alt="" height="30px" width="150px"></span><span class="language-text">Hackerearth</span>
+					</div>
+				</div>
 			</header>
 			<div class="tech-tools">
 				<div class="tech-tool-col">
@@ -229,8 +235,8 @@
 		</div>
 		<div class="page" id="page-education">
 			<header class="education-header cf">
-				<h1 class="education-header__title">Education</h1>
-				<p class="education-header__desc">My education life went through many ups and downs but what remained constant is my curiosity to know more.</p>
+				<h1 class="education-header-title">Education</h1>
+				<p class="education-header-desc">My education life went through many ups and downs but what remained constant is my curiosity to know more.</p>
 				<div class="education-info">
 					<div class="education-title">2021 B-Tech in Information Technology</div>
 					<div class="education-desc">Indian Institute of Information Technology, Lucknow</div>
@@ -248,8 +254,10 @@
 				</div>
 			</header>
 			<div class="education-poster">
-				<img class="" src="{% static 'images/montfort.jpg' %}" alt="">
-				<div>Montfort Inter College, Lucknow</div>
+				<div class="education-college">
+					<div class="college-img"><img src="{% static 'images/montfort.jpg' %}" alt=""></div>
+					<div class="college-text">Montfort Inter College, Lucknow</div>
+				</div>
 			</div>
 		</div>
 		<div class="page" id="page-projects">
@@ -293,8 +301,7 @@
 		</div>
 		<div class="page" id="page-info">
 			<header class="info-header cf">
-				<h1 class="info-header__title">Personal Info</h1>
-				<p class="info-header__desc">This section helps you know me intimately.</p>
+				<h1 class="info-header-title">Personal Info</h1>
 				<div class="info-desc">
 					<span class="info-desc-title">Name:</span>
 					<span class="info-desc-value">Yash Gupta</span>
@@ -328,20 +335,20 @@
 			<header class="blog-header cf">
 				<h1 class="blog-header-title">Blog &amp; News</h1>
 				<p class="blog-header-desc">The crazyness don't ends here. Go and checkout my Blog - <a href="https://yshgpta.blogspot.com/">A Walk to Remember</a></p>
-				<p class="blog-info-title">Through this section you can know what I am currently working at.</p>
+				<p class="blog-info-title">What am I currently working at ?</p>
 				<p class="blog-info">
 					Currently I am in my fourth semester and will be sitting for internships next semester. Therefore currently I am busy improvising my coding skills.
 				</p>
 			</header>
 			<div class="blog-poster">
-			<p class="blog-poster-title">My Favourite Quote</p>
+			<p class="blog-poster-title">My Favourite Quotes</p>
 			<div class="blog-data-container">
 				<div class="blog-data">
 					<div class="blog-quote">
 						<p class="blog-quote-data">"If you want to shine like a sun first burn like a sun."</p>
 					</div>
 					<div class="blog-quote-author-box">
-						<p class="blog-quote-author">Dr. A.P.J. Abdul Kalam</p>
+						<p class="blog-quote-author">-Dr. A.P.J. Abdul Kalam</p>
 					</div>
 						<img class="blog-quote-poster" src="{% static 'images/abdulkalam.png' %}" alt="">
 				</div>
@@ -350,7 +357,7 @@
 						<p class="blog-quote-data">"There is no passion to be found playing small – in settling for a life that is less than the one you are capable of living."</p>
 					</div>
 					<div class="blog-quote-author-box">
-						<p class="blog-quote-author">Nelson Mandela</p>
+						<p class="blog-quote-author">-Nelson Mandela</p>
 					</div>
 						<img class="blog-quote-poster" src="{% static 'images/nelson.png' %}" alt="">
 			</div>
@@ -359,7 +366,7 @@
 					<p class="blog-quote-data">"You can't cross the sea merely by standing and staring at the water."</p>
 				</div>
 				<div class="blog-quote-author-box">
-					<p class="blog-quote-author">Rabindranath Tagore</p>
+					<p class="blog-quote-author">-Rabindranath Tagore</p>
 				</div>
 					<img class="blog-quote-poster" src="{% static 'images/tagore.png' %}" alt="">
 		</div>
@@ -368,7 +375,7 @@
 				<p class="blog-quote-data">"Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid."</p>
 			</div>
 			<div class="blog-quote-author-box">
-				<p class="blog-quote-author">Albert Einstein</p>
+				<p class="blog-quote-author">-Albert Einstein</p>
 			</div>
 				<img class="blog-quote-poster" src="{% static 'images/albert.png' %}" alt="">
 	</div>
@@ -377,7 +384,7 @@
 			<p class="blog-quote-data">"Many of life’s failures are people who did not realize how close they were to success when they gave up."</p>
 		</div>
 		<div class="blog-quote-author-box">
-			<p class="blog-quote-author">Thomas Alva Edison</p>
+			<p class="blog-quote-author">-Thomas Alva Edison</p>
 		</div>
 			<img class="blog-quote-poster" src="{% static 'images/thomas.jpg' %}" alt="">
 </div>
@@ -388,7 +395,7 @@
 		<div class="page" id="page-contact">
 			<header class="contact-header cf">
 				<h1 class="contact-header-title">Have a question? I have answers!</h1>
-				<p class="info">Email me with any questions or enquiries or call +91-8127078333. I would be happy to answer your questions and set up a meeting with you.</p>
+				<div class="contact-info">Email me with any questions or enquiries or call +91-8127078333. I would be happy to answer your questions and set up a meeting with you.</div>
 				<div class="contact-box">
 					<img class="contact-icon" src="{% static 'images/gmail.png' %}" alt="" width="50px" height="50px">
 					<p class="contact-value">ysh.gpta8333@gmail.com</p>
@@ -404,7 +411,7 @@
 			</header>
 			<div class="form-container">
 				<div class="form-title">
-					<p>Fill out this form to get in touch!</p>
+					<div>Fill out this form to get in touch!</div>
 				</div>
 				<div class="form-body">
 					<form action="">
@@ -435,9 +442,6 @@
 	<script src="{% static 'script/classie.js' %}"></script>
 	<script src="{% static 'script/main.js' %}"></script>
 
-
-	<!-- About Me -->
-	<!-- <script src="{% static 'script/abcaboutme.js' %}"></script> -->
 </body>
 
 </html>
