@@ -272,6 +272,8 @@ header{
 	color: #000;
 }
 
+/* Skills */
+
 .myskills-header{
 	text-align: center;
 	top: 20%;
@@ -290,8 +292,6 @@ header{
 	color: #222222;
 }
 
-
-/* Progress Bar */
 .skill_row{
 	width: 40%;
 	display: inline-block;
@@ -306,9 +306,6 @@ header{
   width: 90%;
   margin: 20px;
 	padding: 1.5em;
-	/* box-shadow: 5px 5px 8px #454545;
-	background: rgb(207, 207, 207 ,0.2); */
-
 }
 
 .skill_header{
@@ -418,6 +415,8 @@ header{
 .progress-bar .ct5,.progress-bar .p5,.progress-bar .ct10,.progress-bar .p10{
 	color: #000428;
 }
+
+/* Technologies */
 
 .tech-header-title{
 	font-size: 38px;
@@ -571,6 +570,8 @@ header{
 	animation-duration: 2s;
 }
 
+/* Projects */
+
 .project-header{
 	position: absolute;
 	top: 20%;
@@ -651,6 +652,8 @@ header{
 	font-weight: normal;
 }
 
+/* Personal Info */
+
 .info-header-title{
 	font-size: 38px;
 	font-family: 'Montserrat';
@@ -689,6 +692,8 @@ header{
 .info-desc-value.animated{
 	opacity: 1;
 }
+
+/* Blogs and News */
 
 .blog-header{
 	width: 42%;
@@ -784,6 +789,8 @@ header{
 .blog-quote-poster.animated{
   animation-duration: 3s;
 }
+
+/* Get in touch */
 
 .contact-header{
 	width: 40%;
