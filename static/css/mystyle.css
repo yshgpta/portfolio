@@ -1050,14 +1050,10 @@ header{
 	}
 
 	.aboutme-header {
-		padding: 50px 20px 1em;
     width: 90%;
     top: 30%;
 	}
 
-	.aboutme-header__title {
-		font-size: 1.8em;
-	}
 	.aboutme-col1{
 		display: block;
 		width: 100%;
@@ -1069,6 +1065,9 @@ header{
 		display: block;
 		width: 100%;
 		bottom: -40%;
+	}
+	.tiles{
+		width: 100%;
 	}
 	.aboutme-header-title{
 		font-size: 30px;
