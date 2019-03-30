@@ -7,17 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="{% static 'images/icon.png' %}" type="image/png">
-	<title>Mr. Gupta</title>
+	<title>Yash Gupta</title>
 	<meta name="description" content="Career Portfolio of Mr. Yash Gupta" />
 	<meta name="author" content="Yash Gupta" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="{% static 'css/acomponent.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/ycomponent.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/estyle.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
 
 	<script src="{% static 'script/modernizr-2.6.2.min.js' %}"></script>
-	<script src="{% static 'script/ascript.js' %}"></script>
+	<script src="{% static 'script/script.js' %}"></script>
 
 </head>
 
@@ -29,7 +30,7 @@
 		<div class="pages-nav__item"><a class="link link--page" onclick="load_bar()" href="#page-myskills">Skills</a></div>
 		<div class="pages-nav__item"><a class="link link--page" onclick="load_tech_tiles()" href="#page-technologies">Technologies</a></div>
 		<div class="pages-nav__item"><a class="link link--page" onclick="load_education_poster()" href="#page-education">Education</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-projects">Projects</a></div>
+		<div class="pages-nav__item"><a class="link link--page" onclick="load_project_tiles()" href="#page-projects">Projects</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" onclick="load_info_tiles()" href="#page-info">Personal Info</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" onclick="load_quote()" href="#page-blog">Blog &amp; News</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" onclick="load_form()" href="#page-contact">Get In Touch</a></div>
@@ -52,7 +53,7 @@
 						<h1 class="home-header-present">Hi!</h1>
 						<h1 class="home-header-present">I'm Yash Gupta</h1>
 						<p class="home-header-desc">I'm a second year undergraduate student pursuing Bachelor of Technology Degree in Information Technology.</p>
-						<button class="header-btn" type="button" name="button"><a href="#">Download Resume <img class="icon-btn" src="{% static 'images/download.png' %}" alt="Download Icon" height="15px" width="auto"></a></button>
+						<button class="header-btn" type="button" name="button"><a href="https://drive.google.com/open?id=1JBObTCz-3ktYG1s52p49BkAIPcfnxsSy">Download Resume <img class="icon-btn" src="{% static 'images/download.png' %}" alt="Download Icon" height="15px" width="auto"></a></button>
 					</div>
 					<div class="home-text2">
 						<h1 class="home-header-proff">I'm a</h1>
@@ -70,7 +71,7 @@
 			<div class="aboutme-col1">
 				<header class="aboutme-header cf">
 					<h1 class="aboutme-header-title">About Myself</h1>
-					<p class="aboutme-header-desc">Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I a type of person, the more you know me, the more curious you get to know me better. At times I can be the most boring living creature on the planet. But thank GOD I can't stay that way too long :). I'm not a loner, but form time to time I need some time alone to re-contemplate the meaning of life. Sometimes I believe, I think more than I should, more thoughtful than I should be. I'm too economical in using any resourse (except bandwidth, I think). I prefer to wear unfasionable comfortable clothes over smart looking unwieldy ones. And the most important part I believe in fulfillment of my Dreams.</p>
+					<p class="aboutme-header-desc">Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I a type of person, the more you know me, the more curious you get to know me better. At times I can be the most boring living creature on the planet. But thank GOD I can't stay that way too long <i class="em em-grinning"></i>.</p><p class="aboutme-header-desc">I'm not a loner, but form time to time I need some time alone to re-contemplate the meaning of life. Sometimes I believe, I think more than I should, more thoughtful than I should be. I'm too economical in using any resourse (except bandwidth, I think). I prefer to wear unfasionable comfortable clothes over smart looking unwieldy ones. And through my looks you won't be able to consider me as a IT Technocrat (Just Kidding)<i class="em em-joy"></i><i class="em em-joy"></i>.</p>
 				</header>
 			</div>
 			<div class="aboutme-col2">
@@ -103,12 +104,12 @@
 				<h1 class="myskills-header-title">My Skills</h1>
 			</header>
 			<div class="skill">
-				<div class="skill_row">
+				<div class="skill_row row_1">
 					<div class="skill_header">Technical Skills</div>
 					<div class="skill_item">
 						<div class="bar-title">Full Stack Development</div>
 						<div class="progress">
-							<div class="progress-bar bar1" role="progressbar" aria-valuenow="95" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct1"></span><span class="percent p1">%</span></div>
+							<div class="progress-bar bar1" role="progressbar" aria-valuenow="90" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct1"></span><span class="percent p1">%</span></div>
 						</div>
 					</div>
 					<div class="skill_item">
@@ -132,11 +133,11 @@
 					<div class="skill_item">
 						<div class="bar-title">Java FX</div>
 						<div class="progress">
-							<div class="progress-bar bar5" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct5"></span><span class="percent p5">%</span></div>
+							<div class="progress-bar bar5" role="progressbar" aria-valuenow="65" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct5"></span><span class="percent p5">%</span></div>
 						</div>
 					</div>
 				</div>
-				<div class="skill_row">
+				<div class="skill_row row_2">
 					<div class="skill_header">Personal Skill</div>
 					<div class="skill_item">
 						<div class="bar-title">Creativity</div>
@@ -153,19 +154,19 @@
 					<div class="skill_item">
 						<div class="bar-title">Adaptibility</div>
 						<div class="progress">
-							<div class="progress-bar bar8" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct8"></span><span class="percent p8">%</span></div>
+							<div class="progress-bar bar8" role="progressbar" aria-valuenow="85" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct8"></span><span class="percent p8">%</span></div>
 						</div>
 					</div>
 					<div class="skill_item">
 						<div class="bar-title">Ability to work as a team</div>
 						<div class="progress">
-							<div class="progress-bar bar9" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct9"></span><span class="percent p9">%</span></div>
+							<div class="progress-bar bar9" role="progressbar" aria-valuenow="90" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct9"></span><span class="percent p9">%</span></div>
 						</div>
 					</div>
 					<div class="skill_item">
 						<div class="bar-title">Communication</div>
 						<div class="progress">
-							<div class="progress-bar bar10" role="progressbar" aria-valuenow="75" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct10"></span><span class="percent p10">%</span></div>
+							<div class="progress-bar bar10" role="progressbar" aria-valuenow="85" value="0" aria-valuemin="0" aria-valuemax="100"><span class="counter ct10"></span><span class="percent p10">%</span></div>
 						</div>
 					</div>
 				</div>
@@ -189,19 +190,19 @@
 			<div class="tech-tools">
 				<div class="tech-tool-col">
 					<div class="tech-tool-item item1">
-						<span class="tech-tool-item1"><img src="{% static 'images/react.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item1"><img src="{% static 'images/react.png' %}" width='100%' alt=""> </span>
 						<span class="tech-tool-item2">React JS</span>
 					</div>
 					<div class="tech-tool-item item2">
-						<span class="tech-tool-item1"><img src="{% static 'images/javascript.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item1"><img src="{% static 'images/javascript.png' %}" width='100%' alt=""> </span>
 						<span class="tech-tool-item2">Javascript</span>
 					</div>
 					<div class="tech-tool-item item3">
-						<span class="tech-tool-item1"><img src="{% static 'images/htmlcss.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item1"><img src="{% static 'images/htmlcss.png' %}" width='100%' alt=""> </span>
 						<span class="tech-tool-item2">HTML and CSS</span>
 					</div>
 					<div class="tech-tool-item item4">
-						<span class="tech-tool-item1"><img src="{% static 'images/mysql.png' %}" width='100px' alt=""> </span>
+						<span class="tech-tool-item1"><img src="{% static 'images/mysql.png' %}" width='100%' alt=""> </span>
 						<span class="tech-tool-item2">My SQL</span>
 					</div>
 					<div class="tech-tool-item item5">
@@ -236,7 +237,6 @@
 		<div class="page" id="page-education">
 			<header class="education-header cf">
 				<h1 class="education-header-title">Education</h1>
-				<p class="education-header-desc">My education life went through many ups and downs but what remained constant is my curiosity to know more.</p>
 				<div class="education-info">
 					<div class="education-title">2021 B-Tech in Information Technology</div>
 					<div class="education-desc">Indian Institute of Information Technology, Lucknow</div>
@@ -264,19 +264,42 @@
 			<header class="project-header cf">
 				<h1 class="project-header-title">Projects</h1>
 				<div class="project-section">
-					<div class="project-type">React</div>
+					<div class="project-type">JAVA - Android App</div>
 					<div class="project-list">
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/grp_expense.png'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text"><a href="https://github.com/yshgpta/group_expense_tracker" target="_blank">Group Expense Tracker</a></div>
+  						</div>
+						</div>
+					</div>
+				</div>
+				<div class="project-section">
+					<div class="project-type">React JS</div>
+					<div class="project-list">
+						<div class="project">
+							<img class="project-image" src="{% static 'images/face_recog.png'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text"><a href="https://github.com/yshgpta/face_recognizer" target="_blank">Face Recognizer</a></div>
+  						</div>
 						</div>
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/inspector_color.png'%}" alt="">
+							<div class="overlay">
+								<div class="project-text"><a href="https://github.com/yshgpta/weather_inspector" target="_blank">Weather Inspector</a></div>
+							</div>
 						</div>
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/gallery.png'%}" alt="">
+							<div class="overlay">
+								<div class="project-text"><a href="https://github.com/yshgpta/little_memory_gallery" target="_blank">Little Memories</a></div>
+							</div>
 						</div>
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/creative.png'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text">My Creative World</div>
+  						</div>
 						</div>
 					</div>
 				</div>
@@ -284,16 +307,42 @@
 					<div class="project-type">Django</div>
 					<div class="project-list">
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/portfolio.png'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text"><a href="#" target="-_blank">My Career Portfolio</a> </div>
+  						</div>
 						</div>
+					</div>
+				</div>
+				<div class="project-section">
+					<div class="project-type">JavaFX</div>
+					<div class="project-list">
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/student_manager.jpg'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text"><a href="https://github.com/yshgpta/Student-Manager" target="_blank">Student Toolkit</a> </div>
 						</div>
+					</div>
+				</div>
+				<div class="project-section">
+					<div class="project-type">Designs</div>
+					<div class="project-list">
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/design.png'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text">My Illustrations</div>
 						</div>
+						</div>
+					</div>
+				</div>
+				<div class="project-section">
+					<div class="project-type">After Effect</div>
+					<div class="project-list">
 						<div class="project">
-
+							<img class="project-image" src="{% static 'images/after_effect.png'%}" alt="">
+							<div class="overlay">
+    						<div class="project-text"><a href="https://drive.google.com/open?id=1qvHgig2gx0tWV_AmRF-lpwrxiNYaEmmT" target="_blank">My After Effect Creations</a> </div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -327,9 +376,7 @@
 					<span class="info-desc-value">Blogger, Poet, Orator</span>
 				</div>
 			</header>
-			<div class="info-poster">
-				<img src="{% static 'images/1.png'%}" alt="">
-			</div>
+				<img class="poster info-poster" src="{% static 'images/1.png'%}" alt="">
 		</div>
 		<div class="page" id="page-blog">
 			<header class="blog-header cf">
@@ -350,7 +397,7 @@
 					<div class="blog-quote-author-box">
 						<p class="blog-quote-author">-Dr. A.P.J. Abdul Kalam</p>
 					</div>
-						<img class="blog-quote-poster" src="{% static 'images/abdulkalam.png' %}" alt="">
+						<img class="blog-quote-poster" src="{% static 'images/apjabdulkalam.png' %}" alt="">
 				</div>
 				<div class="blog-data">
 					<div class="blog-quote">
@@ -359,7 +406,7 @@
 					<div class="blog-quote-author-box">
 						<p class="blog-quote-author">-Nelson Mandela</p>
 					</div>
-						<img class="blog-quote-poster" src="{% static 'images/nelson.png' %}" alt="">
+						<img class="blog-quote-poster" src="{% static 'images/nelson.jpg' %}" width="200px" height="auto" alt="">
 			</div>
 			<div class="blog-data">
 				<div class="blog-quote">
@@ -368,7 +415,7 @@
 				<div class="blog-quote-author-box">
 					<p class="blog-quote-author">-Rabindranath Tagore</p>
 				</div>
-					<img class="blog-quote-poster" src="{% static 'images/tagore.png' %}" alt="">
+					<img class="blog-quote-poster" src="{% static 'images/tagore.jpg' %}" alt="">
 		</div>
 		<div class="blog-data">
 			<div class="blog-quote">

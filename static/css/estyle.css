@@ -192,7 +192,7 @@ header{
 /* About Me */
 
 .aboutme-col1{
-	width: 60%;
+	width: 65%;
 	height: 100%;
 	display: inline-block;
 }
@@ -200,7 +200,7 @@ header{
 .aboutme-col2{
 	position: absolute;
 	height: 100%;
-	width: 40%;
+	width: 35%;
 	display: inline-block;
 }
 
@@ -240,7 +240,7 @@ header{
 	box-shadow: 2px 2px 2px #A1A1A1;
 	width: 150px;
 	height: 150px;
-	margin: 40px;
+	margin: 10px 20px;
 	display: inline-block;
 	background: white;
 	padding-top: 10px;
@@ -470,7 +470,7 @@ header{
 }
 
 .tech-tool-item{
-	width: 300px;
+	width: 80%;
 	height: 100px;
 	margin: 20px;
 	display: flex;
@@ -514,6 +514,8 @@ header{
 	align-items: center;
 }
 
+/* Education */
+
 .education-header{
 	width: 35%;
 }
@@ -529,9 +531,6 @@ header{
 	color: #222222;
 }
 
-.education-header-desc{
-	font-family: 'Roboto';
-}
 
 .education-info{
 	margin: 30px 20px;
@@ -557,11 +556,15 @@ header{
 	position: absolute;
 	top: 35%;
 	right: 0%;
+	width: 50%;
 	transform: translateY(-50%);
 	padding: 20px;
 	padding-bottom: 10px;
 	background: rgba(181, 181, 181, 0.2);
 	box-shadow: 2px 2px 2px #737373;
+}
+.college-img img{
+	width: 100%;
 }
 
 .education-poster.animated{
@@ -570,8 +573,9 @@ header{
 
 .project-header{
 	position: absolute;
-	top: 5%;
+	top: 20%;
 	left: 50%;
+	width: 80%;
 	transform: translateX(-50%);
 }
 .project-header-title{
@@ -584,18 +588,67 @@ header{
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	color: #222222;
-
+}
+.project-section{
+	margin-top: 20px;
+}
+.project-type{
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
 }
 .project-list{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 .project{
+	position: relative;
 	width: 180px;
-	height: 220px;
+	height: 180px;
 	border: 1px solid black;
 	margin: 20px;
+}
+.project-image{
+	width: 100%;
+	height: 180px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(54, 54, 54, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.project:hover .overlay {
+  height: 100%;
+}
+.project-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+	font-family: "Roboto";
+}
+.project-text a{
+	color: #8F8F8F;
+}
+
+.project-text a:hover{
+	color: #FFFFFF;
+	font-weight: normal;
 }
 
 .info-header-title{
@@ -635,12 +688,6 @@ header{
 
 .info-desc-value.animated{
 	opacity: 1;
-}
-
-.info-poster{
-	position: absolute;
-	bottom: 0%;
-	left: 60%;
 }
 
 .blog-header{
@@ -868,107 +915,131 @@ header{
 	background: #000;
 }
 
-/* .bp-nav {
-	margin: 0 0 0 -0.75em;
+
+@media screen and (max-width: 80em){
+		.tiles_info{
+			width: 120px;
+			height: 120px;
+			padding: 10px;
+		}
+		.tiles_text{
+			font-size: 12px;
+		}
+		.skill_row{
+			position: absolute;
+			top: -200px;
+			width: 100%;
+			display: block;
+			margin-left: -50px;
+		}
+		.row_2{
+			top: 100px;
+		}
+		.tech-tool-item2{
+			font-size: 20px;
+		}
+		.education-poster{
+			width: 50%;
+		}
+		.college-img img{
+			width: 100%;
+		}
+		.info-header{
+			width: 50%;
+		}
+
 }
-
-.bp-nav__item {
-	position: relative;
-	display: inline-block;
-	width: 2.5em;
-	height: 2.5em;
-	margin: 0 0.1em;
-	text-align: left;
-	border-radius: 50%;
+@media screen and (max-width: 60em){
+	.tech-header{
+		display: block;
+		width: 80%;
+		text-align: center;
+	}
+	.tech-tools{
+		position: absolute;
+		display: block;
+		width: 80%;
+		top: 110%;
+		left: 20%;
+		margin-bottom: 10px;
+	}
+	.tech-tool-item1 img{
+		width: 60px;
+	}
+	.tech-tool-item2{
+		font-size: 16px;
+	}
+	.language-img img{
+		width: 100px;
+		height: auto;
+	}
+	.language-text{
+		font-size: 16px;
+	}
+	.education-header{
+		display: block;
+		width: 80%;
+	}
+	.education-poster{
+		display: block;
+		width: 80%;
+		top: 70%;
+		left: 10%;
+	}
+	.college-img img{
+		width: 100%;
+	}
+	.blog-quote-poster{
+	  width: 220px;
+	  height: auto;
+	}
+	.contact-header{
+		display: block;
+		width: 80%;
+	}
+	.form-container{
+		display: block;
+		width: 80%;
+		top: 75%;
+		margin-bottom: 10px;
+	}
+	.project{
+		width: 150px;
+		height: 150px;
+	}
+	.project-image{
+		height: 150px;
+	}
 }
-
-.bp-nav__item > span {
-	display: none;
-}
-
-.bp-nav__item:hover:before {
-	content: attr(data-info);
-	font-size: 0.85em;
-	font-weight: bold;
-	position: absolute;
-	top: 120%;
-	left: 0;
-	width: 600%;
-	text-align: left;
-	pointer-events: none;
-	color: #595a5f;
-}
-
-.bp-nav__item:hover {
-	background: #5c5edc;
-}
-
-.bp-icon:after {
-	font-family: 'bpicons';
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	text-align: center;
-	text-transform: none;
-	color: #5c5edc;
-	-webkit-font-smoothing: antialiased;
-
-	speak: none;
-}
-
-.bp-nav .bp-icon:after {
-	line-height: 2.4;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-indent: 0;
-}
-
-.bp-nav a:hover:after {
-	color: #fff;
-}
-
-.bp-icon--next:after {
-	content: '\e000';
-}
-
-.bp-icon--drop:after {
-	content: '\e001';
-}
-
-.bp-icon--archive:after {
-	content: '\e002';
-}
-
-.bp-icon--about:after {
-	content: '\e003';
-}
-
-.bp-icon--prev:after {
-	content: '\e004';
-} */
 
 @media screen and (max-width: 40em) {
   header{
     position: relative;
   }
-	.home-header {
+	.home-header, .aboutme-header{
 		padding: 50px 20px 1em;
     width: 90%;
     top: 20%;
 	}
-	.home-header__title {
-		font-size: 1.4em;
+	.home-header-present, .home-header-proff-title{
+		font-size: 35px;
 	}
-	.bp-header {
-		padding: 50px 20px 1em;
-		width: 90%;
-		top: 20%;
+	.home-header-desc, .home-header-proff-desc{
+		font-size: 14px;
 	}
-	.bp-header__title {
-		font-size: 1.4em;
+	.home-header-proff{
+		font-size: 25px;
+	}
+	.home-text1, .home-text2{
+			margin: 0em 1em;
+		}
+	.header-btn{
+		padding: 5px 10px;
+		letter-spacing: 1px;
+		font-size: 12px;
+	}
+	.poster{
+		top: 60%;
 	}
 
 	.aboutme-header {
@@ -983,27 +1054,126 @@ header{
 	.aboutme-col1{
 		display: block;
 		width: 100%;
+		top: 10%;
+		position: absolute;
 	}
 	.aboutme-col2{
+		position: absolute;
 		display: block;
 		width: 100%;
-		top: 20%;
+		bottom: -40%;
 	}
-
+	.aboutme-header-title{
+		font-size: 30px;
+	}
+	.aboutme-header-desc{
+		font-size: 14px;
+	}
 	.tiles_info{
 		width: 100px;
 		height: 100px;
 		margin: 10px;
+		margin-left: 40px;
 	}
-
+	.tiles_text{
+		font-size: 10px
+	}
+	.myskills-header-title{
+		font-size: 30px;
+	}
 	.skill_header{
 		font-size: 18px;
 	}
+	.skill_row{
+		width: 100%;
+		display: block;
+		margin-left: -30px;
+	}
+	.tech-header-title{
+		font-size: 30px;
+	}
+	.education-header-title{
+		font-size:30px;
+	}
+	.education-title{
+		font-size: 16px;
+	}
+	.info-header{
+		display: block;
+		width: 80%;
+		top: 30%;
+	}
+	.info-header-title{
+		font-size: 30px;
+	}
+	.info-desc{
+		margin: 10px;
+	}
+	.info-desc-title{
+		font-size: 18px;
+	}
+	.info-desc-value{
+		font-size: 16px;
+	}
+	.info-poster{
+		top: 33%;
+	}
+	.blog-header{
+		display: block;
+		width: 80%;
+	}
+	.blog-header-title{
+		font-size: 30px;
+	}
+	.blog-header-desc{
+		font-size: 16px;
+	}
+	.blog-info-title{
+		font-size: 18px;
+	}
+	.blog-info{
+		font-size: 16px;
+	}
+	.blog-poster{
+		display: block;
+		width: 80%;
+		top: 70%;
+	}
+	.blog-poster-title{
+		font-size: 24px;
+	}
+	.form-container{
+		top: 80%;
+	}
+	.contact-header-title{
+		font-size: 30px;
+	}
+	.contact-info{
+		font-size: 14px;
+	}
+	.form-title{
+		font-size: 22px;
+	}
+	.project-header{
+		width: 90%;
+	}
+	.project-header-title{
+		font-size: 30px;
+	}
+	.project-type{
+		font-size: 18px;
+	}
+	.project-text{
+		font-size: 16px;
+	}
+	.project{
+		width: 120px;
+		height: 120px;
+	}
+	.project-image{
+		height: 120px;
+	}
 	h4{
 		margin: 5px;
-	}
-
-	.home-text1, .home-text2{
-		margin: 0em 1em;
 	}
 }

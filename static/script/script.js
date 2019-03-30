@@ -100,6 +100,16 @@ var load_tech_tiles = function(){
   }
 }
 
+var load_project_tiles = function(){
+  setTimeout(function() {
+  var i;
+  for(i=0;i<9;i++){
+    var element = document.getElementsByClassName("project")[i];
+    element.classList.add('animated','fadeInUp');
+  }
+},250);
+}
+
 var load_education_poster = function(){
   var element = document.getElementsByClassName("education-poster")[0];
   element.classList.add('animated','fadeInUp');
